@@ -1,10 +1,10 @@
 # Preferred Networks 2019 Internship Machine Learning Task
 
 These are the codes to solve the problems specified in Preferred Networks 2019 Internship's Machine Learning screening task. The codes consist of 3 main parts:
-- ```/src/gnn.py``` - The main file in which the Graph Neural Network (GNN) model classes and training/evaluation routines are located. 
-- ```/src/utils.py``` - A utility file for building training/evaluation data generator.
-- ```/src/test.py``` - A file consisting of several unit tests to test the correctness of model classes methods.
-- ```/src/make_graph.py``` - Visualize the changes of training and validation accuracy and losses using graphs, and save the corresponding figures.
+- ```gnn.py``` - The main file in which the Graph Neural Network (GNN) model classes and training/evaluation routines are located. 
+- ```utils.py``` - A utility file for building training/evaluation data generator.
+- ```test.py``` - A file consisting of several unit tests to test the correctness of model classes methods.
+- ```make_graph.py``` - Visualize the changes of training and validation accuracy and losses using graphs, and save the corresponding figures.
 
 ## Requirements
 
