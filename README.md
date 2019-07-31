@@ -19,7 +19,7 @@ Implementing Adam[1] optimizer.
 
 ## Running
 
-Go to ```/src/``` and run:
+Run:
 
 ```
 python gnn.py [-h] [-b BATCH_SIZE] [-e EPOCH] [-t TYPE] [-sml]
@@ -76,7 +76,7 @@ python gnn.py -b 32 -e 50 -t adam -sm 1
 python gnn.py -b 64 -e 50 -t adam -sm 1
 python gnn.py -b 128 -e 50 -t adam -sm 1
 ```
-and then use one of the models saved in ```/src/models/gnn_adam/``` by running:
+and then use one of the models saved in ```models/gnn_adam/``` by running:
 ```
 python gnn.py -lm ./models/gnn_adam/[model_name].pkl -po
 ```
@@ -90,7 +90,7 @@ Note:
 - The code assumes that the dataset is located on ```/datasets/```
 - Training hyperparameters are currently hard-coded to the model class itself, and changes to the hyperparameters require one to edit the code itself. The hyperparameters are currently set to the recommended setting specified in the task guidelines.
 - Training and validation data are split to 80:20 ratio.
-- When running the code for the first time, the code will produce 2 numpy files (```train_ids.npy``` and ```valid_ids.npy```) which specify the indices for training data and validation data. These files will then be loaded on the next run to ensure a fair comparison between different batch sizes and training algorithms. To produce a fresh batch of indices, one can delete these files and run the code again. Also, for easier reproduction, the indices used in the report has been included in ```/src/```.
+- When running the code for the first time, the code will produce 2 numpy files (```train_ids.npy``` and ```valid_ids.npy```) which specify the indices for training data and validation data. These files will then be loaded on the next run to ensure a fair comparison between different batch sizes and training algorithms. To produce a fresh batch of indices, one can delete these files and run the code again. Also, for easier reproduction, the indices used in the report has been included.
 - Perfect reproduction is impossible because of the inherent stochastic features of the algorithms (initialization of weights using Gaussian distribution, random sampling of the mini-batches), but repeated experiments will produce similar results.
 
 ## Testing
